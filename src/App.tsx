@@ -1,4 +1,15 @@
 import "./App.css";
+import Header from "./components/Header";
+import IntroductionBody from "./components/IntroductionBody";
 export default function App() {
-  return <div className="font-syne text-[35px] font-semibold">numenex</div>;
+  return (
+    <div
+      className="min-h-screen min-w-screen bg-cover bg-center bg-fixed"
+      style={{ backgroundImage: `url(src/assets/svg/elipse.svg)` }}
+    >
+      <Header />
+      <IntroductionBody />
+      <img src="src/assets/svg/dashboard.svg" className="p-20"></img>
+    </div>
+  );
 }
