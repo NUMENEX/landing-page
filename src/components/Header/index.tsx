@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <div className="flex flex-row  py-5 px-20 justify-between items-center ">
+    <div className="flex flex-col md:flex-row py-5 px-5 md:px-20 justify-between items-center ">
       <div className="flex flex-row  gap-2  ">
         <img src="src/assets/svg/star-logo.svg" />
         <div className="font-syne text-3xl font-semibold leading-42 text-left">
@@ -8,7 +8,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="flex flex-row  gap-4  ">
+      <div className="flex flex-row  gap-4  hidden lg:flex">
         <a>How it works</a>
         <a>Product</a>
         <a>Service</a>
