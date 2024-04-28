@@ -1,7 +1,9 @@
 import "./App.css";
+import CoinBanner from "./components/CoinBanner";
 import FeaturesBody from "./components/FeaturesBody";
 import Header from "./components/Header";
 import IntroductionBody from "./components/IntroductionBody";
+import TrendingCryptos from "./components/TrendingCryptos";
 
 export default function App() {
   return (
@@ -11,9 +13,12 @@ export default function App() {
     >
       <Header />
       <IntroductionBody />
-      <img src="src/assets/svg/dashboard.svg" className="px-20 p-20"></img>
+
+      <img src="src/assets/svg/dashboard.svg" className="px-20 p-20 h-50"></img>
 
       <FeaturesBody />
+      <CoinBanner />
+      <TrendingCryptos />
     </div>
   );
 }

@@ -35,13 +35,13 @@ export default function FeaturesBody() {
         AI Empowers Trading, Redefining Cryptocurrency Landscape
       </div>
 
-      <div className="pt-10 md:px-20 text-center md:text-lg">
+      <div className="pt-10 md:px-20 text-center md:text-lg text-gray-600">
         With cutting-edge AI technology, we empower traders to trade with
         confidence, optimize strategies, and stay ahead of the curve in the
         ever-evolving world of cryptocurrency.
       </div>
       <div className="flex justify-center items-center ">
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 pb-40 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5  ">
           {featureData.map((data, index) => (
             <FeatureCard
               key={index}
