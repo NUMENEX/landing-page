@@ -1,10 +1,12 @@
+import { StarGoldenLogo } from "../../assets/svg";
+
 export default function IntroductionBody() {
   return (
     <div>
       <div className="px-20 md:px-40 py-5 gap-20">
         <div className="flex justify-center mb-5">
-          <div className=" flex flex-row p-1 bg-purple-100  text-purple-800 rounded-md gap-2 justify-center">
-            <img src="src/assets/svg/star-golden-logo.svg"></img>
+          <div className=" flex flex-row p-1 bg-purple-100  text-purple-800 rounded-md gap-2 justify-center items-center">
+            <StarGoldenLogo />
             <div className="text-md md:text-lg">
               First AI powered market making and trading platform
             </div>

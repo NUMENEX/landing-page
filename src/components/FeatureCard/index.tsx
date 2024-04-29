@@ -1,8 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
+import { RightIcon, StarLogo } from "../../assets/svg";
 interface FeatureCardProps {
   title: string;
   description: string;
-  logo: string;
+  logo: React.ReactNode;
 }
 export default function FeatureCard(props: FeatureCardProps) {
   const [show, setShow] = React.useState(false);
@@ -14,9 +15,10 @@ export default function FeatureCard(props: FeatureCardProps) {
     <div className="pt-20 ">
       <div className=" w-80 items-start p-5 gap-5  bg-white shadow-xl rounded-lg">
         <div className="flex flex-row justify-center items-center p-4 gap-2 w-14 h-14 bg-purple-100 rounded-full">
-          <img src={"src/assets/svg/" + props.logo}></img>
+          {props.logo}
         </div>
-        <div className="font-syne font-semibold text-lg leading-6 py-5 flex items-center capitalize text-black">
+
+        <div className="font-syne ffont-semibold text-lg leading-6 py-5 flex items-center capitalize text-black">
           {props.title}
         </div>
         <div className={`text-gray-700 ${show ? "" : "line-clamp-2"}`}>
@@ -29,7 +31,7 @@ export default function FeatureCard(props: FeatureCardProps) {
           <div className="text-purple-800 font-medium text-base ">
             {show ? "Show Less" : "Read More"}
           </div>
-          <img src="src/assets/svg/rightIcon.svg"></img>
+          <RightIcon />
         </div>
       </div>
     </div>

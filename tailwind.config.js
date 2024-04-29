@@ -7,6 +7,10 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         syne: ["Syne", "sans-serif"],
       },
+      backgroundImage: {
+        "hero-pattern": "url('src/assets/svg/hero-pattern.svg')",
+        "footer-texture": "url('src/assets/svg/footer-texture.png')",
+      },
     },
   },
   plugins: [],

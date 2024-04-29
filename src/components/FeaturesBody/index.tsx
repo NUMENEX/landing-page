@@ -1,3 +1,4 @@
+import { StarLogo } from "../../assets/svg";
 import FeatureCard from "../FeatureCard";
 
 export default function FeaturesBody() {
@@ -6,26 +7,26 @@ export default function FeaturesBody() {
       title: "AI driven exchange for your personalized crypto portfolio.",
       description:
         "Personalize your portfolio with our top-performing AI models. Customize strategies to meet your goals hassle-free.",
-      logo: "star-logo.svg",
+      logo: <StarLogo />,
     },
     {
       title: "AI driven exchange for your token listing.",
       description:
         "Access our no-cost MM AI model. Lowest integration fee, unmatched market prices. Customize MM AI for targeted trading.",
-      logo: "star-logo.svg",
+      logo: <StarLogo />,
     },
     {
       title: "AI driven exchange with Trading Digital Twin.",
       description:
         "Train your trading behavior to create AI Trading Digital Twin. Control your funds securely with non-custodial addresses.",
-      logo: "star-logo.svg",
+      logo: <StarLogo />,
     },
 
     {
       title: "An overall market making and trading platform.",
       description:
         "Train your trading behavior to create AI Trading Digital Twin. Control your funds securely with non-custodial addresses.",
-      logo: "star-logo.svg",
+      logo: <StarLogo />,
     },
     //
   ];

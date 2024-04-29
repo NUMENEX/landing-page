@@ -1,4 +1,4 @@
-import FeatureCard from "../FeatureCard";
+import { ChartSampleImage, StarGoldenLogo, StarLogo } from "../../assets/svg";
 
 export default function TrendingCryptos() {
   const coinData = [
@@ -6,31 +6,31 @@ export default function TrendingCryptos() {
       name: "ETHEREUM",
       price: "923 USD",
       growth: 0.15,
-      logo: "star-golden-logo.svg",
+      logo: <StarGoldenLogo />,
     },
     {
       name: "Bitcoin",
       price: "923 USD",
       growth: -1.15,
-      logo: "star-golden-logo.svg",
+      logo: <StarLogo />,
     },
     {
       name: "Doge Coin",
       price: "923 USD",
       growth: 1.5,
-      logo: "star-golden-logo.svg",
+      logo: <StarGoldenLogo />,
     },
     {
       name: "Doge Coin",
       price: "923 USD",
       growth: 1.5,
-      logo: "star-golden-logo.svg",
+      logo: <StarGoldenLogo />,
     },
     {
       name: "Doge Coin",
       price: "923 USD",
       growth: 1.5,
-      logo: "star-golden-logo.svg",
+      logo: <StarGoldenLogo />,
     },
   ];
   return (
@@ -50,7 +50,7 @@ export default function TrendingCryptos() {
               <div className="justify-center items-center p-4  bg-white bg-opacity-80 border border-gray-300 rounded-lg">
                 <div className="flex flex-row items-center gap-10">
                   <div className="flex flex-row items-center gap-2">
-                    <img src="src/assets/svg/star-logo.svg"></img>
+                    {data.logo}
                     <div>
                       <div> XRP</div>
                       <div className="text-gray-400 text-sm">
@@ -60,7 +60,7 @@ export default function TrendingCryptos() {
                     </div>
                   </div>
 
-                  <img src="src/assets/svg/chartSampleImage.svg"></img>
+                  <ChartSampleImage />
                 </div>
                 <div className="border border-gray-400 my-5 flex"></div>
 
