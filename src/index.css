@@ -7,6 +7,37 @@
   font-size: 16px;
   font-weight: 400;
 }
+
+@media (max-width: 1600px) {
+  #root {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1400px) {
+  #root {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  #root {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  #root {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 373px) {
+  #root {
+    font-size: 10px;
+  }
+}
+
 .primaryButton {
   @apply flex justify-center items-center px-5 md:px-10 py-2 md:py-4 gap-2 text-white bg-purple-800 rounded-full border-2 border-purple-800 cursor-pointer;
 }
@@ -18,6 +49,7 @@
 .secondaryButton {
   @apply flex justify-center items-center px-5 md:px-10 py-2 md:py-4 gap-2 text-purple-800 border-2 border-purple-800 rounded-full cursor-pointer;
 }
+
 .secondaryButton:hover {
   @apply text-white bg-purple-800;
 }
