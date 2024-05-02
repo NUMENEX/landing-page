@@ -29,7 +29,7 @@ export default function CoinBanner() {
   ];
   return (
     <div>
-      <div className="flex flex-row justify-between items-center px-10 py-4 gap-14 fixed w-full h-18 left-0 bottom-0 bg-purple-900 text-white text-sm">
+      <div className="flex flex-row justify-between items-center px-10 py-4 gap-14  w-full h-18 left-0 bottom-0 bg-primary text-white text-sm">
         {coinData.map((data) => (
           <div className="flex flex-row gap-2 items-center">
             <img src={"src/assets/svg/" + data.logo}></img>

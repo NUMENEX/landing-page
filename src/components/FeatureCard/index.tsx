@@ -21,14 +21,14 @@ export default function FeatureCard(props: FeatureCardProps) {
         <div className="font-syne ffont-semibold text-lg leading-6 py-5 flex items-center capitalize text-black">
           {props.title}
         </div>
-        <div className={`text-gray-700 ${show ? "" : "line-clamp-2"}`}>
+        <div className={`text-gray_card ${show ? "" : "line-clamp-2"}`}>
           {props.description}
         </div>
         <div
           className="flex flex-row  gap-2 items-center pt-10 cursor-pointer "
           onClick={updateShow}
         >
-          <div className="text-purple-800 font-medium text-base ">
+          <div className="text-primary font-medium text-base ">
             {show ? "Show Less" : "Read More"}
           </div>
           <RightIcon />

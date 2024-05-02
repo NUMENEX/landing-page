@@ -31,7 +31,7 @@ export default function FeaturesBody() {
     //
   ];
   return (
-    <div className="px-20 justify-center gap-20">
+    <div className="px-5 py-20 md:p-20 justify-center gap-20">
       <div className="text-3xl md:text-4xl lg:text-6xl font-semibold leading-96 font-syne text-center ">
         AI Empowers Trading, Redefining Cryptocurrency Landscape
       </div>

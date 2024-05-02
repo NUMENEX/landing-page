@@ -2,7 +2,7 @@ import { StarLogo } from "../../assets/svg";
 
 export default function Header() {
   return (
-    <div className="flex flex-col md:flex-row py-5 px-5 md:px-20 justify-between items-center ">
+    <div className="flex flex-row  md:flex-row py-5 px-5 md:px-20 justify-between items-center ">
       <div className="flex flex-row  gap-2  ">
         <StarLogo />
         <div className="font-syne text-3xl font-semibold leading-42 text-left">
