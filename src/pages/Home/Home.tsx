@@ -1,0 +1,32 @@
+import { Dashboard } from "@src/assets/svg";
+import ArchitectureFeatures from "@src/components/ArchitectureFeatures";
+import CoinBanner from "@src/components/CoinBanner";
+import FAQ from "@src/components/FAQ";
+import FeaturesBody from "@src/components/FeaturesBody";
+import Footer from "@src/components/Footer";
+import Header from "@src/components/Header";
+import IntroductionBody from "@src/components/IntroductionBody";
+import TrendingCryptos from "@src/components/TrendingCryptos";
+import React from "react";
+
+export default function Home() {
+  return (
+    <div className="bg-hero-pattern bg-cover bg-center bg-fixed">
+      <Header />
+      <IntroductionBody />
+
+      <div className="max-w-screen p-20">
+        <Dashboard
+          style={{ width: "100%", height: "auto", objectFit: "contain" }}
+        />
+      </div>
+
+      <CoinBanner />
+      <FeaturesBody />
+      <TrendingCryptos />
+      <ArchitectureFeatures />
+      <FAQ />
+      <Footer />
+    </div>
+  );
+}

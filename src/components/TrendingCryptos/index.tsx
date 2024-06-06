@@ -26,24 +26,23 @@ export default function TrendingCryptos() {
       growth: 1.5,
       logo: <StarGoldenLogo />,
     },
-    {
-      name: "Doge Coin",
-      price: "923 USD",
-      growth: 1.5,
-      logo: <StarGoldenLogo />,
-    },
+    // {
+    //   name: "Doge Coin",
+    //   price: "923 USD",
+    //   growth: 1.5,
+    //   logo: <StarGoldenLogo />,
+    // },
   ];
   return (
     <div>
       <div className="px-5 md:px-20 justify-center gap-20">
-        <div className="text-3xl md:text-4xl lg:text-6xl font-semibold leading-96 font-syne text-center ">
+        <div className="text-60px font-semibold leading-60px font-syne text-center">
           Community Crypto Trending
         </div>
-
-        <div className="pt-10 md:px-20 text-center md:text-lg text-gray-600">
+        <p className="pt-5 md:px-20 text-center md:text-lg text-secondary">
           A bigger market with futuristic approach of AI in market making and
           trading.
-        </div>
+        </p>
         <div className="flex justify-center items-center ">
           <div className="flex flex-row gap-5 py-10">
             {coinData.map((data) => (
