@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18.19.0]
+        node-version: [14.18.2]
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -37,8 +37,8 @@ jobs:
       - name: Upload build artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: build
-          path: build/
+          name: dist
+          path: dist/
 
   deploy:
     needs: build
@@ -47,8 +47,8 @@ jobs:
       - name: Download build artifacts
         uses: actions/download-artifact@v2
         with:
-          name: build
-          path: build/
+          name: dist
+          path: dist/
 
       - name: Install Surge
         run: npm install -g surge
