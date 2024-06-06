@@ -1,30 +1,29 @@
+import { NavLink } from "react-router-dom";
 import { StarLogo } from "../../assets/svg";
 // trigger workflow
 export default function Header() {
+  const navLink = [
+    "How it works",
+    "Product",
+    "Service",
+    "Learn",
+    "Blog",
+    "About",
+  ];
+
   return (
-    <div className="flex flex-row  md:flex-row py-5 px-5 md:px-20 justify-between items-center ">
-      <div className="flex flex-row  gap-2  ">
-        <StarLogo />
-        <div className="font-syne text-3xl font-semibold leading-42 text-left">
-          numenex
+    <div className="flex justify-center">
+      <div className="flex flex-row  items-center h-[96px] w-[calc(100%-180px)]">
+        <div className="flex flex-row gap-2 items-center ">
+          <StarLogo />
+          <div className="font-syne text-3xl font-semibold leading-42 text-left">
+            numenex
+          </div>
         </div>
-      </div>
-
-      <div className="flex flex-row  gap-4  hidden lg:flex">
-        <a>How it works</a>
-        <a>Product</a>
-        <a>Service</a>
-        <a>Learn</a>
-        <a>Blog</a>
-        <a>About</a>
-      </div>
-
-      <div className="flex flex-row gap-2 ">
-        <div className="py-1">
-          <div className="primaryButton"> Log In</div>
-        </div>
-        <div className="py-1">
-          <div className="secondaryButton"> Sign Up</div>
+        <div className="gap-6  hidden lg:flex items-center absolute left-1/2 -translate-x-1/2">
+          {navLink.map((link) => (
+            <a className="cursor-pointer">{link}</a>
+          ))}
         </div>
       </div>
     </div>

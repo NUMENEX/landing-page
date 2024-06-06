@@ -1,22 +1,58 @@
-import { PlaceholderImage } from "@src/assets/svg";
+import {
+  CPUIcon,
+  PlaceholderImage,
+  ScanningIcon,
+  ShapesIcon,
+  ThreeLayerscon,
+} from "@src/assets/svg";
 import ArchitectureFeatureCard from "./ArchitectureFeatureCard";
 
 export default function ArchitectureFeatures() {
+  const archFeatures = [
+    {
+      title: "High-performance matching engine.",
+      description:
+        "Facilitates efficient order execution and rapid trade confirmation.",
+      icon: <CPUIcon />,
+    },
+    {
+      title: "Multi-layered security infrastructure.",
+      description:
+        "Enables secure and decentralized AI model training, fostering collaboration and innovation.",
+      icon: <ThreeLayerscon />,
+    },
+    {
+      title: "Dedicated Bittensor subnet.",
+      description:
+        "Facilitates efficient order execution and rapid trade confirmation.",
+      icon: <ScanningIcon />,
+    },
+    {
+      title: "Intuitive user interface (UI)",
+      description:
+        "Designed for users of all experience levels, making the platform accessible and user-friendly.",
+      icon: <ShapesIcon />,
+    },
+  ];
   return (
-    <div className=" p-5 lg:p-20  justify-center gap-20">
-      <div className="text-3xl md:text-4xl lg:text-6xl font-semibold leading-96 font-syne text-center ">
+    <div className="p-5 lg:p-20  justify-center gap-20">
+      <div className="text-60px font-semibold leading-60px font-syne text-center ">
         Secure and Scalable Architecture
       </div>
 
-      <div className="pt-10 md:px-20 text-center md:text-lg text-gray_card">
+      <p className="pt-5 md:px-20 text-center md:text-lg text-secondary">
         NumenEx utilizes a robust and secure architecture to ensure optimal
         performance and user data protection.
-      </div>
-
-      <div className="flex flex-row items-start justify-between  p-10">
+      </p>
+      <div className="flex flex-row items-start justify-between p-10">
         <div className="flex flex-col gap-5  flex-grow ">
-          {[...Array(4)].map((_, index) => (
-            <ArchitectureFeatureCard key={index} />
+          {archFeatures.map((feature) => (
+            <ArchitectureFeatureCard
+              key={feature.title}
+              description={feature.description}
+              icon={feature.icon}
+              title={feature.title}
+            />
           ))}
         </div>
 

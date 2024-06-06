@@ -8,4 +8,11 @@ export { ReactComponent as StarWhiteLogo } from "./star-white-logo.svg";
 export { ReactComponent as TelegramLogo } from "./telegramIcon.svg";
 export { ReactComponent as PlusIcon } from "./plusIcon.svg";
 export { ReactComponent as CrossIcon } from "./crossIcon.svg";
-
+export { ReactComponent as GridEditIcon } from "./grid-edit.svg";
+export { ReactComponent as DocumentCodeIcon } from "./document-code.svg";
+export { ReactComponent as ConvertShapeIcon } from "./convertshape.svg";
+export { ReactComponent as BitcoinConvertIcon } from "./bitcoin-convert.svg";
+export { ReactComponent as CPUIcon } from "./cpu.svg";
+export { ReactComponent as ScanningIcon } from "./scanning.svg";
+export { ReactComponent as ShapesIcon } from "./shapes.svg";
+export { ReactComponent as ThreeLayerscon } from "./three-layers.svg";

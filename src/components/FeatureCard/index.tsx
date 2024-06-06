@@ -11,28 +11,28 @@ export default function FeatureCard(props: FeatureCardProps) {
   const updateShow = () => {
     setShow(!show);
   };
-  return (
-    <div className="pt-20 ">
-      <div className=" w-80 items-start p-5 gap-5  bg-white shadow-xl rounded-lg">
-        <div className="flex flex-row justify-center items-center p-4 gap-2 w-14 h-14 bg-purple-100 rounded-full">
-          {props.logo}
-        </div>
 
-        <div className="font-syne ffont-semibold text-lg leading-6 py-5 flex items-center capitalize text-black">
-          {props.title}
+  return (
+    <div className="w-80 items-start p-4 bg-white rounded-lg border border-border h-fit">
+      <div className="flex flex-row justify-center items-center p-3 gap-2 w-12 h-12 bg-creamy-purple rounded-full">
+        {props.logo}
+      </div>
+      <div className="font-syne font-semibold text-base leading-6 pt-5 flex items-center capitalize text-chinese-black">
+        {props.title}
+      </div>
+      <p
+        className={`text-gray_card text-sm pt-2 ${show ? "" : "line-clamp-2"}`}
+      >
+        {props.description}
+      </p>
+      <div
+        className="flex flex-row group  gap-2 items-center pt-10 cursor-pointer"
+        onClick={updateShow}
+      >
+        <div className="text-primary font-medium text-base ">
+          {show ? "Show Less" : "Read More"}
         </div>
-        <div className={`text-gray_card ${show ? "" : "line-clamp-2"}`}>
-          {props.description}
-        </div>
-        <div
-          className="flex flex-row  gap-2 items-center pt-10 cursor-pointer "
-          onClick={updateShow}
-        >
-          <div className="text-primary font-medium text-base ">
-            {show ? "Show Less" : "Read More"}
-          </div>
-          <RightIcon />
-        </div>
+        <RightIcon className="group-hover:translate-x-1" />
       </div>
     </div>
   );

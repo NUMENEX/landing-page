@@ -39,17 +39,10 @@
 }
 
 .primaryButton {
-  @apply flex justify-center items-center px-5 md:px-10 py-2 md:py-4 gap-2 text-white bg-primary rounded-full border-2 border-primary cursor-pointer;
+  @apply flex justify-center items-center px-5 py-2 md:px-10 gap-2 text-white bg-primary rounded-full border-2 border-primary cursor-pointer;
 }
 
-.primaryButton:hover {
-  @apply text-primary bg-white border-primary border-2;
-}
 
 .secondaryButton {
   @apply flex justify-center items-center px-5 md:px-10 py-2 md:py-4 gap-2 text-primary border-2 border-primary rounded-full cursor-pointer;
-}
-
-.secondaryButton:hover {
-  @apply text-white bg-primary;
 }
