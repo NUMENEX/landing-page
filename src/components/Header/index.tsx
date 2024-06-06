@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { StarLogo } from "../../assets/svg";
+import { NumenexLogo, StarLogo } from "../../assets/svg";
 // trigger workflow
 export default function Header() {
   const navLink = [
@@ -15,7 +15,7 @@ export default function Header() {
     <div className="flex justify-center">
       <div className="flex flex-row  items-center h-[96px] w-[calc(100%-180px)]">
         <div className="flex flex-row gap-2 items-center ">
-          <StarLogo />
+          <NumenexLogo className="size-[34px]" />
           <div className="font-syne text-3xl font-semibold leading-42 text-left">
             numenex
           </div>

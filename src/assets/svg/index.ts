@@ -16,3 +16,4 @@ export { ReactComponent as CPUIcon } from "./cpu.svg";
 export { ReactComponent as ScanningIcon } from "./scanning.svg";
 export { ReactComponent as ShapesIcon } from "./shapes.svg";
 export { ReactComponent as ThreeLayerscon } from "./three-layers.svg";
+export { ReactComponent as NumenexLogo } from "./numenex-logo.svg";

@@ -39,13 +39,6 @@ export default function CoinBanner() {
 
   const filteredData =
     (coinsData && Object.values(coinsData?.data?.["RAW"])) || [];
-  console
-    .log
-    // filteredData && (filteredData[0] as any)["USD"].PRICE,
-    // filteredData && (filteredData[0] as any)["USD"].CHANGEHOUR
-    // (filteredData[0] as any)["USD"].PRICE
-    ();
-  // console.log(Object.values(coinsData?.data?.DISPLAY));
 
   const getIcon = (symbol: string) => {
     switch (symbol) {
