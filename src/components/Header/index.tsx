@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { StarLogo } from "../../assets/svg";
-
+// trigger workflow
 export default function Header() {
   const navLink = [
     "How it works",
