@@ -12,6 +12,7 @@ export default {
         secondary: "#5A5A5A",
         gray_card: "#707070",
         gray_light: "#C0C0C0",
+        buttonBg: "#22004D",
         "chinese-black": "#131212",
         "arsenic-gray": "#403F42",
         "smoky-black": "#121800",

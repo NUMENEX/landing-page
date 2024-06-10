@@ -1,26 +1,30 @@
-import { StarLogo, StarWhiteLogo, TelegramLogo } from "@src/assets/svg";
+import {
+  NumenexLogo,
+  StarLogo,
+  StarWhiteLogo,
+  TelegramLogo,
+} from "@src/assets/svg";
 
 export default function Footer() {
   return (
-    <div className="bg-primary p-20 text-white ">
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3  justify-between gap-20 ">
-        <div className="flex flex-col w-[350px] gap-5 ">
-          <div className="font-syne text-[35px] ">
-            {" "}
+    <div className="bg-primary p-4 sm:p-20 text-white ">
+      <div className="flex justify-between gap-8 lg:gap-[140px] flex-col lg:flex-row">
+        <div className="flex flex-col w-[350px] gap-5">
+          <div className="font-syne text-[35px]">
             Subscribe to our Newsletter
           </div>
-          <div className="font-poppins text-base font-normal leading-26 tracking-tighter text-left text-gray-300">
+          <p className="font-poppins text-base font-normal tracking-tighter text-left text-gray-300 break-words">
             Stay in the loop with our Numenex newsletter, where we deliver
             bite-sized insights under this project.
-          </div>
+          </p>
 
-          <div className="flex flex-row gap-5">
+          <div className="flex flex-col sm:flex-row gap-5">
             <input
               type="text"
-              className=" p-5 rounded-full  bg-white text-secondary "
+              className="h-16 px-6 rounded-full  bg-white text-secondary "
               placeholder="mail@gmail.com"
-            ></input>
-            <button className=" py-5 px-10 rounded-full  bg-purple-900 hover:bg-white hover:text-primary">
+            />
+            <button className="h-16 px-8 rounded-full  bg-buttonBg">
               Subscribe
             </button>
           </div>
@@ -58,10 +62,10 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col w-[350px] gap-10 lg:items-end ">
-          <div className="flex flex-row  gap-5 items-center  ">
-            <StarWhiteLogo />
-            <div className="font-syne text-[35px] font-semibold leading-42 text-left">
+        <div className="flex flex-col gap-4 lg:gap-10 lg:items-end ">
+          <div className="flex flex-row gap-5 items-center ">
+            <NumenexLogo className="size-[34px]" />
+            <div className="font-syne text-3xl font-semibold leading-42 text-left">
               numenex
             </div>
           </div>

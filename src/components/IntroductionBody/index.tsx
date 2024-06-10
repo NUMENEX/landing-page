@@ -6,8 +6,8 @@ export default function IntroductionBody() {
       <div className="px-5 md:px-20 xl:px-40 py-5 gap-20 text-center">
         <div className="flex justify-center mb-5">
           <div className="flex flex-row p-1 bg-purple-100  text-primary rounded-md gap-2 justify-center items-center">
-            <StarGoldenLogo className="w-5 h-5" />
-            <p className="text-base font-normal self-center">
+            <StarGoldenLogo className="w-5 h-5 hidden sm:block" />
+            <p className="text-base font-normal text-center">
               First AI powered market making and trading platform
             </p>
           </div>
