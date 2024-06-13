@@ -5,6 +5,7 @@ interface QuestionCardProps {
   question: string;
   answer: string;
 }
+
 export default function QuestionCard(props: QuestionCardProps) {
   const [show, setShow] = React.useState(false);
 
@@ -18,13 +19,13 @@ export default function QuestionCard(props: QuestionCardProps) {
     >
       <div className="flex flex-col gap-5">
         <div className=" flex flex-row  justify-between ">
-          <div className={show ? "text-primary" : ""}>{props.question}</div>
+          <p className={show ? "text-primary self-center" : ""}>
+            {props.question}
+          </p>
           {show ? <CrossIcon /> : <PlusIcon />}
         </div>
-
-        <div className={show ? "" : "hidden"}>{props.answer}</div>
+        <p className={show ? "" : "hidden"}>{props.answer}</p>
       </div>
-
       <div className="border-b border-purple-100 my-10"></div>
     </div>
   );
