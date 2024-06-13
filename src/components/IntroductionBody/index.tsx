@@ -13,10 +13,9 @@ export default function IntroductionBody() {
           </div>
         </div>
         <div className="flex flex-col font-semibold font-syne text-80px leading-80px text-chinese-black">
-          <h1>Revolutionizing Crypto Trading</h1>
+          <h1>Incentivizing All Crypto Activities with </h1>
           <h1>
-            with
-            <span className="text-primary">{` AI-Powered Market Making`}</span>
+            <span className="text-primary">{`   AI-Powered Layer 1 Blockchain`}</span>
           </h1>
         </div>
 

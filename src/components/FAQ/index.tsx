@@ -8,21 +8,27 @@ export default function FAQ() {
         "  We empower both novice and veteran traders with the tools to make informed decisions and thrive in the dynamic world of crypto.",
     },
     {
-      question: "What is numenex",
+      question: "Can I trust the process from Numenex?",
       answer:
         "  We empower both novice and veteran traders with the tools to make informed decisions and thrive in the dynamic world of crypto.",
     },
     {
-      question: "What is numenex",
+      question: "How costly is using Numenex?",
       answer:
         "  We empower both novice and veteran traders with the tools to make informed decisions and thrive in the dynamic world of crypto.",
     },
 
     {
-      question: "What is numenex",
+      question: "How will bot help us while trading?",
       answer:
         "  We empower both novice and veteran traders with the tools to make informed decisions and thrive in the dynamic world of crypto.",
     },
+    {
+      question: "Is it safe using Numenex?",
+      answer:
+        "  We empower both novice and veteran traders with the tools to make informed decisions and thrive in the dynamic world of crypto.",
+    },
+
     //
   ];
   return (

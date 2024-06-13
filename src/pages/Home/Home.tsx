@@ -6,6 +6,7 @@ import FeaturesBody from "@src/components/FeaturesBody";
 import Footer from "@src/components/Footer";
 import Header from "@src/components/Header";
 import IntroductionBody from "@src/components/IntroductionBody";
+import Roadmap from "@src/components/Roadmap";
 import TrendingCryptos from "@src/components/TrendingCryptos";
 import React from "react";
 
@@ -25,6 +26,7 @@ export default function Home() {
       <FeaturesBody />
       <TrendingCryptos />
       <ArchitectureFeatures />
+      <Roadmap />
       <FAQ />
       <Footer />
     </div>

@@ -10,25 +10,25 @@ import ArchitectureFeatureCard from "./ArchitectureFeatureCard";
 export default function ArchitectureFeatures() {
   const archFeatures = [
     {
-      title: "High-performance matching engine.",
+      title: "Layer 1 Blockchain with Subnets, Miners, Validators & Feeders.",
       description:
         "Facilitates efficient order execution and rapid trade confirmation.",
       icon: <CPUIcon />,
     },
     {
-      title: "Multi-layered security infrastructure.",
+      title: "Output Models Into Digital Twin Traders",
       description:
         "Enables secure and decentralized AI model training, fostering collaboration and innovation.",
       icon: <ThreeLayerscon />,
     },
     {
-      title: "Dedicated Bittensor subnet.",
+      title: "Decentralized Futures Trading DEX.",
       description:
         "Facilitates efficient order execution and rapid trade confirmation.",
       icon: <ScanningIcon />,
     },
     {
-      title: "Intuitive user interface (UI)",
+      title: "Analytics, Scores, Market Positioning For Tokens",
       description:
         "Designed for users of all experience levels, making the platform accessible and user-friendly.",
       icon: <ShapesIcon />,
