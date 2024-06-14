@@ -56,8 +56,8 @@ export default function Roadmap() {
                 </div>
               </div>
 
-              <div className="flex flex-row items-start p-4 gap-2 w-7 h-7 bg-creamy-purple rounded-full justify-center items-center">
-                <div className="w-3 h-3 bg-primary rounded-full flex-none order-0 flex-grow-0"></div>
+              <div className="flex flex-row items-start p-4 gap-2 w-7 h-7 md:w-12 md:h-12 lg:h-14 lg:w-14 bg-creamy-purple rounded-full justify-center items-center">
+                <div className="w-3 h-3 md:h-5 md:w-5 lg:h-6 lg:w-6 bg-primary rounded-full flex-none order-0 flex-grow-0"></div>
               </div>
 
               <div
