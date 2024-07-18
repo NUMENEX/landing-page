@@ -10,7 +10,7 @@ import FeatureCard from "../FeatureCard";
 export default function FeaturesBody() {
   const featureData = [
     {
-      title: "AI driven exchange for your personalized crypto portfolio.",
+      title: "Subnets For Exchanges, Token Category.",
       description:
         "Personalize your portfolio with our top-performing AI models. Customize strategies to meet your goals hassle-free.",
       logo: <GridEditIcon className="w-6 h-6" />,

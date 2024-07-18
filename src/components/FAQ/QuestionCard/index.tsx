@@ -1,4 +1,5 @@
 import { CrossIcon, PlusIcon, RightIcon } from "@src/assets/svg";
+import { cn } from "@src/utils/cn";
 import React from "react";
 
 interface QuestionCardProps {
@@ -12,19 +13,31 @@ export default function QuestionCard(props: QuestionCardProps) {
   const updateShow = () => {
     setShow(!show);
   };
+
   return (
     <div
-      className=" text-left text-secondary cursor-pointer text-[18px] "
+      className="text-left text-secondary cursor-pointer text-[18px]"
       onClick={updateShow}
     >
-      <div className="flex flex-col gap-5">
+      <div
+        className={cn(
+          "flex flex-col max-h-[40px] overflow-hidden transition-all duration-500",
+          {
+            "max-h-[100px]": show,
+          }
+        )}
+      >
         <div className=" flex flex-row  justify-between ">
-          <p className={show ? "text-primary self-center" : ""}>
+          <p
+            className={cn("transition-all duration-500", {
+              "text-primary": show,
+            })}
+          >
             {props.question}
           </p>
           {show ? <CrossIcon /> : <PlusIcon />}
         </div>
-        <p className={show ? "" : "hidden"}>{props.answer}</p>
+        <p>{props.answer}</p>
       </div>
       <div className="border-b border-purple-100 my-10"></div>
     </div>

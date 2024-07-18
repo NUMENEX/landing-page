@@ -16,7 +16,7 @@ export default function Home() {
       <Header />
       <IntroductionBody />
 
-      <div className="max-w-screen p-20">
+      <div className="max-w-screen px-5 md:px-20 xl:px-40 pt-10">
         <AnalyticsImage
           style={{ width: "100%", height: "auto", objectFit: "contain" }}
         />

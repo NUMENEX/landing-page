@@ -13,7 +13,7 @@ export default function FeatureCard(props: FeatureCardProps) {
   };
 
   return (
-    <div className="w-80 items-start p-4 bg-white rounded-lg border border-border h-fit">
+    <div className="w-80 items-start p-4 bg-white rounded-lg border border-border h-fit hover:shadow-[0px_5px_11px_0px_#5F09AC0D] cursor-default">
       <div className="flex flex-row justify-center items-center p-3 gap-2 w-12 h-12 bg-creamy-purple rounded-full">
         {props.logo}
       </div>

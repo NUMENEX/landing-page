@@ -44,7 +44,7 @@ export default function Roadmap() {
                 }`}
               >
                 <div
-                  className={`w-0 h-[140px] border border-[2px] border-creamy-purple `}
+                  className={`w-0 h-[140px] border-[2px] border-creamy-purple `}
                 ></div>
                 <div className="absolute left-5  top-0  w-[50px] md:w-[100px] lg:w-[150px] xl:w-[200px]">
                   <div className="flex flex-col font-manrope">
@@ -56,7 +56,7 @@ export default function Roadmap() {
                 </div>
               </div>
 
-              <div className="flex flex-row items-start p-4 gap-2 w-7 h-7 md:w-12 md:h-12 lg:h-14 lg:w-14 bg-creamy-purple rounded-full justify-center items-center">
+              <div className="flex flex-row p-4 gap-2 w-7 h-7 md:w-12 md:h-12 lg:h-14 lg:w-14 bg-creamy-purple rounded-full justify-center items-center">
                 <div className="w-3 h-3 md:h-5 md:w-5 lg:h-6 lg:w-6 bg-primary rounded-full flex-none order-0 flex-grow-0"></div>
               </div>
 
@@ -66,7 +66,7 @@ export default function Roadmap() {
                 }`}
               >
                 <div
-                  className={`w-0 h-[140px] border border-[2px] border-creamy-purple`}
+                  className={`w-0 h-[140px] border-[2px] border-creamy-purple`}
                 ></div>
                 <div className="absolute left-5  bottom-0 w-[50px] md:w-[150px]">
                   <div className="flex flex-col font-manrope ">
@@ -80,7 +80,7 @@ export default function Roadmap() {
             </div>
             <div className="flex flex-col items-start relative">
               <div
-                className={` w-[50px] lg:w-[150px] xl:w-[200px] md:w-[100px] border border-[2px] border-creamy-purple ${
+                className={` w-[50px] lg:w-[150px] xl:w-[200px] md:w-[100px] border-[2px] border-creamy-purple ${
                   index != roadMapData.length - 1 ? "" : "invisible"
                 }`}
               ></div>
