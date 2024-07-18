@@ -1,4 +1,4 @@
-import { Dashboard } from "@src/assets/svg";
+import { AnalyticsImage, Dashboard } from "@src/assets/svg";
 import ArchitectureFeatures from "@src/components/ArchitectureFeatures";
 import CoinBanner from "@src/components/CoinBanner";
 import FAQ from "@src/components/FAQ";
@@ -17,7 +17,7 @@ export default function Home() {
       <IntroductionBody />
 
       <div className="max-w-screen p-20">
-        <Dashboard
+        <AnalyticsImage
           style={{ width: "100%", height: "auto", objectFit: "contain" }}
         />
       </div>

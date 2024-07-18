@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
-        syne: ["Syne", "sans-serif"],
+        manrope: ["Manrope", "sans-serif"],
       },
       colors: {
         primary: " #560AB5",

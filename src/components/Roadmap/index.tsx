@@ -26,7 +26,7 @@ export default function Roadmap() {
   return (
     <div>
       <div className="px-5 md:px-20 justify-center gap-20">
-        <div className="text-60px font-semibold leading-60px font-syne text-center">
+        <div className="text-60px font-semibold leading-60px font-manrope text-center">
           Roadmap
         </div>
         <p className="pt-5 md:px-20 text-center md:text-lg text-secondary">
@@ -47,11 +47,11 @@ export default function Roadmap() {
                   className={`w-0 h-[140px] border border-[2px] border-creamy-purple `}
                 ></div>
                 <div className="absolute left-5  top-0  w-[50px] md:w-[100px] lg:w-[150px] xl:w-[200px]">
-                  <div className="flex flex-col font-syne">
-                    <div className="text-primary font-syne font-bold">
+                  <div className="flex flex-col font-manrope">
+                    <div className="text-primary font-manrope font-bold">
                       {data.quarter}
                     </div>
-                    <div className="font-syne">{data.milestone}</div>
+                    <div className="font-manrope">{data.milestone}</div>
                   </div>
                 </div>
               </div>
@@ -69,11 +69,11 @@ export default function Roadmap() {
                   className={`w-0 h-[140px] border border-[2px] border-creamy-purple`}
                 ></div>
                 <div className="absolute left-5  bottom-0 w-[50px] md:w-[150px]">
-                  <div className="flex flex-col font-syne ">
-                    <div className="text-primary font-syne font-bold ">
+                  <div className="flex flex-col font-manrope ">
+                    <div className="text-primary font-manrope font-bold ">
                       {data.quarter}
                     </div>
-                    <div className="font-syne">{data.milestone}</div>
+                    <div className="font-manrope">{data.milestone}</div>
                   </div>
                 </div>
               </div>

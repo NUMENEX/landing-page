@@ -37,7 +37,7 @@ export default function FeaturesBody() {
 
   return (
     <div className="px-5 py-20 md:p-20 justify-center gap-20">
-      <div className="text-60px font-semibold leading-60px font-syne text-center text-smoky-black">
+      <div className="text-60px font-semibold leading-60px font-manrope text-center text-smoky-black">
         <h1>AI Empowers Trading, Redefining</h1>
         <h1> Cryptocurrency Landscape</h1>
       </div>

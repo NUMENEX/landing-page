@@ -16,7 +16,7 @@ export default function ArchitectureFeatureCard({
         <div className="flex flex-row justify-center items-center p-4 gap-2 w-14 h-14 bg-purple-100 rounded-full">
           {icon}
         </div>
-        <div className="font-syne font-semibold text-[20px] leading-33 flex items-center capitalize ">
+        <div className="font-manrope font-semibold text-[20px] leading-33 flex items-center capitalize ">
           {title}
         </div>
       </div>

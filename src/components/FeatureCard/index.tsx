@@ -17,7 +17,7 @@ export default function FeatureCard(props: FeatureCardProps) {
       <div className="flex flex-row justify-center items-center p-3 gap-2 w-12 h-12 bg-creamy-purple rounded-full">
         {props.logo}
       </div>
-      <div className="font-syne font-semibold text-base leading-6 pt-5 flex items-center capitalize text-chinese-black">
+      <div className="font-manrope font-semibold text-base leading-6 pt-5 flex items-center capitalize text-chinese-black">
         {props.title}
       </div>
       <p

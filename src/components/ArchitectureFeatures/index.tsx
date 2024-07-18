@@ -36,7 +36,7 @@ export default function ArchitectureFeatures() {
   ];
   return (
     <div className="p-5 lg:p-20  justify-center gap-20">
-      <div className="text-60px font-semibold leading-60px font-syne text-center ">
+      <div className="text-60px font-semibold leading-60px font-manrope text-center ">
         Secure and Scalable Architecture
       </div>
 

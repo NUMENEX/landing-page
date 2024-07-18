@@ -37,7 +37,7 @@ export default function TrendingCryptos() {
   return (
     <div>
       <div className="px-5 md:px-20 justify-center gap-20">
-        <div className="text-60px font-semibold leading-60px font-syne text-center">
+        <div className="text-60px font-semibold leading-60px font-manrope text-center">
           Community Crypto Trending
         </div>
         <p className="pt-5 md:px-20 text-center md:text-lg text-secondary">

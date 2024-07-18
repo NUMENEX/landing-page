@@ -10,7 +10,7 @@ export default function Footer() {
     <div className="bg-primary p-4 sm:p-20 text-white ">
       <div className="flex justify-between gap-8 lg:gap-[140px] flex-col lg:flex-row">
         <div className="flex flex-col w-[350px] gap-5">
-          <div className="font-syne text-[35px]">
+          <div className="font-manrope text-[35px]">
             Subscribe to our Newsletter
           </div>
           <p className="font-poppins text-base font-normal tracking-tighter text-left text-gray-300 break-words">
@@ -65,7 +65,7 @@ export default function Footer() {
         <div className="flex flex-col gap-4 lg:gap-10 lg:items-end ">
           <div className="flex flex-row gap-5 items-center ">
             <NumenexLogo className="size-[34px]" />
-            <div className="font-syne text-3xl font-semibold leading-42 text-left">
+            <div className="font-manrope text-3xl font-semibold leading-42 text-left">
               numenex
             </div>
           </div>

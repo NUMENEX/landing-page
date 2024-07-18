@@ -1,6 +1,7 @@
 export { ReactComponent as RightIcon } from "./rightIcon.svg";
 export { ReactComponent as StarLogo } from "./star-logo.svg";
 export { ReactComponent as Dashboard } from "./dashboard.svg";
+export { ReactComponent as AnalyticsImage } from "./analytics.svg";
 export { ReactComponent as StarGoldenLogo } from "./star-golden-logo.svg";
 export { ReactComponent as ChartSampleImage } from "./chartSampleImage.svg";
 export { ReactComponent as PlaceholderImage } from "./placeholderImage.svg";

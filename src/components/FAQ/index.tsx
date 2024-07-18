@@ -34,7 +34,7 @@ export default function FAQ() {
   return (
     <div className="flex flex-col px-5 md:px-20 justify-center gap-20">
       <div className="flex flex-col items-center gap-4">
-        <div className="text-3xl md:text-4xl lg:text-6xl font-semibold leading-96 font-syne text-center ">
+        <div className="text-3xl md:text-4xl lg:text-6xl font-semibold leading-96 font-manrope text-center ">
           Frequently Asked Questions
         </div>
         <p className="text-center md:text-lg text-secondary">

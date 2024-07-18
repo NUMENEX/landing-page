@@ -8,11 +8,12 @@ export default function IntroductionBody() {
           <div className="flex flex-row p-1 bg-purple-100  text-primary rounded-md gap-2 justify-center items-center">
             <StarGoldenLogo className="w-5 h-5 hidden sm:block" />
             <p className="text-base font-normal text-center">
-              First AI powered market making and trading platform
+              Every crypto users incentivized, Permissionless, AI-Powered, No
+              Premine.{" "}
             </p>
           </div>
         </div>
-        <div className="flex flex-col font-semibold font-syne text-80px leading-80px text-chinese-black">
+        <div className="flex flex-col font-semibold font-manrope text-80px leading-80px text-chinese-black">
           <h1>Incentivizing All Crypto Activities with </h1>
           <h1>
             <span className="text-primary">{`   AI-Powered Layer 1 Blockchain`}</span>
