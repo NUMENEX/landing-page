@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         manrope: ["Manrope", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
       },
       colors: {
         primary: " #560AB5",
@@ -20,8 +21,7 @@ export default {
         "creamy-purple": "#6E4CF91A",
       },
       backgroundImage: {
-        "hero-pattern": "url('src/assets/svg/hero-pattern.svg')",
-        "footer-texture": "url('src/assets/svg/footer-texture.png')",
+        "main-bg": "url('src/assets/background.png')",
       },
       fontSize: {
         "80px": "clamp(2rem,4vw,5rem)",
