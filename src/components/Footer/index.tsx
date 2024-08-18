@@ -17,7 +17,18 @@ export default function Footer() {
         >
           Documentation
         </p>
-        <p>Community</p>
+        <p
+          className="cursor-pointer hover:underline hover:underline-offset-4"
+          onClick={() =>
+            window.open(
+              "https://stats.communex.ai/subnets/19/modules",
+              "_blank",
+              "noopener"
+            )
+          }
+        >
+          Stats
+        </p>
       </div>
     </div>
   );
