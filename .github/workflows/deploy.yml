@@ -1,60 +1,41 @@
-name: Build and Deploy
+name: CI/CD Pipeline
 
 on:
   push:
     branches:
-      - dev
+      - communex
 
 jobs:
-  build:
+  build-and-deploy:
+    environment: deployment
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [18.19.0]
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-      - name: Cache node modules
-        uses: actions/cache@v2
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ matrix.node-version }}-${{ hashFiles('yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-node-${{ matrix.node-version }}-
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'  
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.node-version }}
+    - name: Install dependencies
+      run: |
+        rm ./package-lock.json
+        npm i --legacy-peer-deps
 
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
+    - name: Build the project
+      run: |
+        npm run build
 
-      - name: Build the project
-        run: yarn build
+    - name: Deploy to remote server
+      if: success()  
+      uses: appleboy/ssh-action@v0.1.10
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        port: ${{ secrets.PORT }}
+        command_timeout: 30m
+        script: /data/cicd/landing.sh
 
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: dist
-          path: dist/
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download build artifacts
-        uses: actions/download-artifact@v2
-        with:
-          name: dist
-          path: dist/
-
-      - name: Install Surge
-        run: yarn global add surge
-
-      - name: Deploy to Surge
-        env:
-          SURGE_DOMAIN: ${{ secrets.SURGE_DOMAIN }}
-          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
-        run: surge ./dist $SURGE_DOMAIN --token $SURGE_TOKEN
