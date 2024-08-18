@@ -3,7 +3,7 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - feat/initial-phase
+      - dev
 
 jobs:
   build-and-deploy:
