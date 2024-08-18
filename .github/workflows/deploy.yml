@@ -22,12 +22,10 @@ jobs:
     - name: Install dependencies
       run: |
         npm i --legacy-peer-deps
-      working-directory: ./ 
 
     - name: Build the project
       run: |
         npm run build
-      working-directory: ./ 
 
     - name: Deploy to remote server
       if: success()  
