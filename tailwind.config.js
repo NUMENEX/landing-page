@@ -21,7 +21,7 @@ export default {
         "creamy-purple": "#6E4CF91A",
       },
       backgroundImage: {
-        "main-bg": "url('src/assets/background.png')",
+        "main-bg": "url('/src/assets/background.png')",
       },
       fontSize: {
         "80px": "clamp(2rem,4vw,5rem)",
