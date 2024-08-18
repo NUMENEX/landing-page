@@ -1,6 +1,6 @@
 import "./App.css";
 import { CommuneIcon, NorthEastArrowIcon, NumenexIcon } from "./assets";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import { cn } from "./utils/cn";
 
 export default function App() {
