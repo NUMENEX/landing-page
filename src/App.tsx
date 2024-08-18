@@ -34,6 +34,9 @@ export default function App() {
           "testradial",
           "before:content-[''] before:absolute before:inset-0 before:rounded-[100px] before:p-[2px]  before:bg-[linear-gradient(270deg,rgba(25,0,41,0)_0.06%,rgba(85,130,237,0.48)_25.9%,rgba(251,248,255,0.8)_52.19%,_rgba(85,130,237,0.48)_78.48%,rgba(25,0,41,0)_100.06%)] "
         )}
+        onClick={() =>
+          window.open("https://discord.gg/communeai", "_blank", "noopener")
+        }
       >
         Join Us Now <NorthEastArrowIcon />
       </button>
