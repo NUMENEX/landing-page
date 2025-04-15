@@ -1,4 +1,4 @@
-name: CI/CD Pipeline
+name: Build and Deploy to Build Branch
 
 on:
   push:
@@ -6,36 +6,51 @@ on:
       - communex
 
 jobs:
-  build-and-deploy:
-    environment: deployment
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout source code
+        uses: actions/checkout@v3
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'  
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
-    - name: Install dependencies
-      run: |
-        rm ./package-lock.json
-        npm i --legacy-peer-deps
+      - name: Install dependencies
+        run: npm install
 
-    - name: Build the project
-      run: |
-        npm run build
+      - name: Build project
+        run: npm run build
 
-    - name: Deploy to remote server
-      if: success()  
-      uses: appleboy/ssh-action@v0.1.10
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        port: ${{ secrets.PORT }}
-        command_timeout: 30m
-        script: bash -c "/data/cicd/landing.sh"
+      - name: Deploy to build branch
+        run: |
+          # Configure Git
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
+          # Save current SHA for reference
+          COMMIT_SHA=$(git rev-parse --short HEAD)
+
+          # Clone the repo into a separate dir
+          git clone --branch build https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} build-output || \
+          git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} build-output
+
+          cd build-output
+          git checkout -B build
+
+          # Clean existing contents
+          rm -rf *
+
+          # Copy new build contents
+          cp -r ../dist/* ./
+
+          # Commit and push only if there are changes
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add .
+            git commit -m "Update build from ${COMMIT_SHA}"
+            git push origin build
+          else
+            echo "No changes to commit"
+          fi
